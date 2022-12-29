@@ -122,98 +122,30 @@
 			"path": "script/global/global.js",
 			"global": true
 		},
-		"Board": {
+		"ImageDataEntity": {
 			"type": "script",
-			"path": "script/model/Board.js",
+			"path": "script/ImageDataEntity.js",
 			"global": true
 		},
-		"Piece": {
+		"affectCell": {
 			"type": "script",
-			"path": "script/model/Piece.js",
+			"path": "script/sandbox/affectCell.js",
 			"global": true
 		},
-		"Typts": {
+		"Cell": {
 			"type": "script",
-			"path": "script/model/Typts.js",
+			"path": "script/sandbox/Cell.js",
 			"global": true
 		},
-		"piece_gin": {
-			"type": "image",
-			"path": "image/piece_gin.png",
-			"width": 100,
-			"height": 100
+		"CellType": {
+			"type": "script",
+			"path": "script/sandbox/CellType.js",
+			"global": true
 		},
-		"piece_gyoku": {
-			"type": "image",
-			"path": "image/piece_gyoku.png",
-			"width": 100,
-			"height": 100
-		},
-		"piece_hisya": {
-			"type": "image",
-			"path": "image/piece_hisya.png",
-			"width": 100,
-			"height": 100
-		},
-		"piece_hu": {
-			"type": "image",
-			"path": "image/piece_hu.png",
-			"width": 100,
-			"height": 100
-		},
-		"piece_kaku": {
-			"type": "image",
-			"path": "image/piece_kaku.png",
-			"width": 100,
-			"height": 100
-		},
-		"piece_keima": {
-			"type": "image",
-			"path": "image/piece_keima.png",
-			"width": 100,
-			"height": 100
-		},
-		"piece_kin": {
-			"type": "image",
-			"path": "image/piece_kin.png",
-			"width": 100,
-			"height": 100
-		},
-		"piece_kyousya": {
-			"type": "image",
-			"path": "image/piece_kyousya.png",
-			"width": 100,
-			"height": 100
-		},
-		"piece_narikin": {
-			"type": "image",
-			"path": "image/piece_narikin.png",
-			"width": 100,
-			"height": 100
-		},
-		"piece_ryuu": {
-			"type": "image",
-			"path": "image/piece_ryuu.png",
-			"width": 100,
-			"height": 100
-		},
-		"piece_to": {
-			"type": "image",
-			"path": "image/piece_to.png",
-			"width": 100,
-			"height": 100
-		},
-		"piece_uma": {
-			"type": "image",
-			"path": "image/piece_uma.png",
-			"width": 100,
-			"height": 100
-		},
-		"piece_ou": {
-			"type": "image",
-			"path": "image/piece_ou.png",
-			"width": 100,
-			"height": 100
+		"SandBox": {
+			"type": "script",
+			"path": "script/sandbox/SandBox.js",
+			"global": true
 		}
 	}
 }

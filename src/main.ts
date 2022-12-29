@@ -17,13 +17,16 @@ function main(param: g.GameMainParameterObject): void {
     initialized
   };
 
-  debugger;
   g.game.random.generate();
 
   initializedStart(options, param);
 }
 
 const initialized = () => {
+  // リスナーに教えてもらった、キャンバス拡大でボヤけないようにするやつ
+  if (!g.game.env.isServer)
+    (<any>g.game.renderers[0]).canvasRenderingContext2D.imageSmoothingEnabled = false;
+
   const client = g.game.env.client;
   if (client == null) return;
 
