@@ -8,8 +8,8 @@ export interface ImageDataEntityParameterObject extends g.EParameterObject {
 export class ImageDataEntity extends g.E {
   private readonly imageData: ImageData;
   private readonly canvas: HTMLCanvasElement;
-  private readonly context: CanvasRenderingContext2D;
 
+  public readonly context: CanvasRenderingContext2D;
   public readonly pixelBuffer: Uint8ClampedArray;
   public readonly pixelScale: number;
 
@@ -29,7 +29,7 @@ export class ImageDataEntity extends g.E {
 
   renderSelf(_renderer: g.Renderer, _camera?: g.Camera | undefined): boolean {
     const ctx = (<any>_renderer).context._context as CanvasRenderingContext2D;
-    this.context.putImageData(this.imageData, 0, 0);
+    // this.context.putImageData(this.imageData, 0, 0);
 
     // ctx.save();
     _renderer.save();

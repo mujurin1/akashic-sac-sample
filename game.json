@@ -7,7 +7,8 @@
 		"@akashic-extension/akashic-hover-plugin": "node_modules/@akashic-extension/akashic-hover-plugin/lib/index.js",
 		"@akashic-extension/resolve-player-info": "node_modules/@akashic-extension/resolve-player-info/lib/index.js",
 		"@akashic-extension/akashic-label": "node_modules/@akashic-extension/akashic-label/lib/index.js",
-		"akashic-sac": "node_modules/akashic-sac/lib/index.js"
+		"akashic-sac": "node_modules/akashic-sac/lib/index.js",
+		"box2dweb": "node_modules/box2dweb/box2d.js"
 	},
 	"environment": {
 		"sandbox-runtime": "3",
@@ -53,7 +54,8 @@
 		"node_modules/akashic-sac/lib/actions/SwitchChapter.js",
 		"node_modules/akashic-sac/lib/utils/AkashicEnigne.js",
 		"node_modules/akashic-sac/lib/impl/Common.js",
-		"node_modules/akashic-sac/lib/utils/FrameLabel.js"
+		"node_modules/akashic-sac/lib/utils/FrameLabel.js",
+		"node_modules/box2dweb/box2d.js"
 	],
 	"assets": {
 		"main": {
@@ -127,24 +129,24 @@
 			"path": "script/ImageDataEntity.js",
 			"global": true
 		},
-		"affectCell": {
+		"Physics": {
 			"type": "script",
-			"path": "script/sandbox/affectCell.js",
+			"path": "script/PixelSimulator/Physics.js",
 			"global": true
 		},
-		"Cell": {
+		"pixel": {
 			"type": "script",
-			"path": "script/sandbox/Cell.js",
+			"path": "script/PixelSimulator/pixel/pixel.js",
 			"global": true
 		},
-		"CellType": {
+		"PixelType": {
 			"type": "script",
-			"path": "script/sandbox/CellType.js",
+			"path": "script/PixelSimulator/pixel/PixelType.js",
 			"global": true
 		},
-		"SandBox": {
+		"Sandbox": {
 			"type": "script",
-			"path": "script/sandbox/SandBox.js",
+			"path": "script/PixelSimulator/Sandbox.js",
 			"global": true
 		}
 	}

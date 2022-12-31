@@ -20,6 +20,7 @@
   ],
   "include": [
     "src/**/*.ts",
-    "typings/console.d.ts"
+    "typings/console.d.ts",
+    "typings/box2dweb.d.ts"
   ]
 }
