@@ -1,9 +1,10 @@
 import { initializedStart, InitializedStartOption } from "akashic-sac/lib/index";
 import { Title } from "./chapters/title";
-import { Game } from "./chapters/Game/Game";
+import { Box2DGame } from "./chapters/Game/Box2DGame";
 import { serverStart } from "./server/server";
 import { JoinPlayer } from "./actions/JoinPlayer";
 import * as global from "./global/global";
+import { SandSimulator } from "./chapters/Game/SandSimulator";
 
 function main(param: g.GameMainParameterObject): void {
   const options: InitializedStartOption = {
@@ -12,7 +13,7 @@ function main(param: g.GameMainParameterObject): void {
       assetIds: ["default_frame"]
     },
     // １つ目のチャプターが最初に呼ばれる
-    chapters: [Title, Game],
+    chapters: [Title, SandSimulator], //, Box2DGame],
     serverStart,
     initialized
   };

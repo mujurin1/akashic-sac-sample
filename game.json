@@ -78,11 +78,6 @@
 			"path": "script/chapters/TitleActions.js",
 			"global": true
 		},
-		"Game": {
-			"type": "script",
-			"path": "script/chapters/Game/Game.js",
-			"global": true
-		},
 		"default_frame": {
 			"type": "image",
 			"path": "image/default_frame.png",
@@ -129,11 +124,6 @@
 			"path": "script/ImageDataEntity.js",
 			"global": true
 		},
-		"Physics": {
-			"type": "script",
-			"path": "script/PixelSimulator/Physics.js",
-			"global": true
-		},
 		"pixel": {
 			"type": "script",
 			"path": "script/PixelSimulator/pixel/pixel.js",
@@ -147,6 +137,26 @@
 		"Sandbox": {
 			"type": "script",
 			"path": "script/PixelSimulator/Sandbox.js",
+			"global": true
+		},
+		"RigidBody": {
+			"type": "script",
+			"path": "script/PixelSimulator/RigidBody.js",
+			"global": true
+		},
+		"Box2DGame": {
+			"type": "script",
+			"path": "script/chapters/Game/Box2DGame.js",
+			"global": true
+		},
+		"SandSimulator": {
+			"type": "script",
+			"path": "script/chapters/Game/SandSimulator.js",
+			"global": true
+		},
+		"funcs": {
+			"type": "script",
+			"path": "script/PixelSimulator/pixel/funcs.js",
 			"global": true
 		}
 	}
