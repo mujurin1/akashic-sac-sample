@@ -6,9 +6,9 @@ import { Chapter } from "akashic-sac/lib/Chapter";
 import { JoinPlayer } from "../actions/JoinPlayer";
 import * as global from "../global/global";
 import { Player } from "../model/Player";
-import { SandSimulator } from "./Game/SandSimulator";
 import { ChangeColor } from "./TitleActions";
 import * as box2dWeb from "box2dweb";
+import { SandSimulator_2 } from "./Game/SandSimulator_2";
 
 /**
  * チャプターにはロジックを含ませない
@@ -76,7 +76,7 @@ export class Title extends Chapter {
         this.client.sendAction(new ChangeColor(rndomColor()));
       });
       this.nextButton.onPointDown.add(() => {
-        this.client.sendAction(SwitchChapter.create(SandSimulator));
+        this.client.sendAction(SwitchChapter.create(SandSimulator_2));
       });
     }
     //#endregion

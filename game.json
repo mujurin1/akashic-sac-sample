@@ -1,7 +1,7 @@
 {
 	"width": 1280,
 	"height": 720,
-	"fps": 30,
+	"fps": 60,
 	"main": "./script/main.js",
 	"moduleMainScripts": {
 		"@akashic-extension/akashic-hover-plugin": "node_modules/@akashic-extension/akashic-hover-plugin/lib/index.js",
@@ -124,26 +124,6 @@
 			"path": "script/ImageDataEntity.js",
 			"global": true
 		},
-		"pixel": {
-			"type": "script",
-			"path": "script/PixelSimulator/pixel/pixel.js",
-			"global": true
-		},
-		"PixelType": {
-			"type": "script",
-			"path": "script/PixelSimulator/pixel/PixelType.js",
-			"global": true
-		},
-		"Sandbox": {
-			"type": "script",
-			"path": "script/PixelSimulator/Sandbox.js",
-			"global": true
-		},
-		"RigidBody": {
-			"type": "script",
-			"path": "script/PixelSimulator/RigidBody.js",
-			"global": true
-		},
 		"Box2DGame": {
 			"type": "script",
 			"path": "script/chapters/Game/Box2DGame.js",
@@ -154,9 +134,49 @@
 			"path": "script/chapters/Game/SandSimulator.js",
 			"global": true
 		},
+		"SandSimulator_2": {
+			"type": "script",
+			"path": "script/chapters/Game/SandSimulator_2.js",
+			"global": true
+		},
+		"Cell": {
+			"type": "script",
+			"path": "script/PixelSimulator_2/Cell.js",
+			"global": true
+		},
+		"definitions": {
+			"type": "script",
+			"path": "script/PixelSimulator_2/definitions.js",
+			"global": true
+		},
+		"Particle": {
+			"type": "script",
+			"path": "script/PixelSimulator_2/Particle.js",
+			"global": true
+		},
 		"funcs": {
 			"type": "script",
-			"path": "script/PixelSimulator/pixel/funcs.js",
+			"path": "script/PixelSimulator_2/pixel/funcs.js",
+			"global": true
+		},
+		"Pixel": {
+			"type": "script",
+			"path": "script/PixelSimulator_2/pixel/Pixel.js",
+			"global": true
+		},
+		"PixelState": {
+			"type": "script",
+			"path": "script/PixelSimulator_2/pixel/PixelState.js",
+			"global": true
+		},
+		"PixelType": {
+			"type": "script",
+			"path": "script/PixelSimulator_2/pixel/PixelType.js",
+			"global": true
+		},
+		"World": {
+			"type": "script",
+			"path": "script/PixelSimulator_2/World.js",
 			"global": true
 		}
 	}
